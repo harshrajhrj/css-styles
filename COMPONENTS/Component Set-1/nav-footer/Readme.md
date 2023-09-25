@@ -1,3 +1,1 @@
-<picture>
-    <source media="" srcset="./src/Skeleton.mp4">
-</picture>
+<video src="src/Skeleton.mp4" controls title="Title"></video>
