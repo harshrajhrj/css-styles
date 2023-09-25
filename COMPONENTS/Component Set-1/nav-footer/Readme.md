@@ -1,1 +1,3 @@
-[![Skeleton video](./src/Skeleton.mp4)](./src/Skeleton.mp4)
+<picture>
+    <source media="" srcset="./src/Skeleton.mp4">
+</picture>
