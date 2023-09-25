@@ -1,0 +1,87 @@
+@use "./variables" as v;
+
+.footer {
+    font-size: 10px;
+    padding: 8px 15px 8px 15px;
+    width: 100%;
+
+    hr {
+        opacity: .2;
+    }
+
+    footer {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 10px;
+
+        padding: 4px;
+
+        .top-wrapper {
+            width: 100%;
+            line-height: 1.2rem;
+
+            .user-agreement {
+                display: flex;
+                align-items: baseline;
+                justify-content: space-evenly;
+                gap: 10px;
+
+                letter-spacing: .2px;
+
+                span {
+                    color: v.$sky-4;
+                    font-weight: 600;
+                }
+
+                a {
+                    font-weight: normal;
+                    color: v.$sky-3;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            @media (max-width: 464px) {
+                width: auto;
+
+                .user-agreement {
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                }
+            }
+        }
+
+        .bottom-wrapper {
+            .copyright {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+
+                a {
+                    opacity: .7;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+
+                span {
+                    font-size: 16px;
+                    font-family: 'Oswald', sans-serif;
+                    color: v.$sky-4;
+                }
+            }
+        }
+    }
+}
+
+.footer-tooltip {
+    --bs-tooltip-bg: #{v.$sky-4};
+    --bs-tooltip-color: #{v.$light};
+    --bs-tooltip-font-size: 10px;
+}

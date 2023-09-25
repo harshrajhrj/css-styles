@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+$light: #F8F6F4;
+$sky-1: #F6F1F1;
+$sky-2: #AFD3E2;
+$sky-3: #19A7CE;
+$sky-4: #146C94;
+
+$teal-1: #8EC3B0;
+$teal-2: #9ED5C5;
+$teal-3: #BCEAD5;
+$teal-4: #DEF5E5;
+
+$warm-red: #D2001A;
+$warm-yellow: #FFDE00;
+$warm-light-: #FFFAE7;
+$warm-fade: #EFEFEF;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    white-space: nowrap;
+}

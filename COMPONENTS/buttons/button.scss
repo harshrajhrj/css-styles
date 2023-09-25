@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+$light: #F8F6F4;
+$sky-1: #F6F1F1;
+$sky-2: #AFD3E2;
+$sky-3: #19A7CE;
+$sky-4: #146C94;
+
+$teal-1: #8EC3B0;
+$teal-2: #9ED5C5;
+$teal-3: #BCEAD5;
+$teal-4: #DEF5E5;
+
+$warm-red: #D2001A;
+$warm-yellow: #FFDE00;
+$warm-light-: #FFFAE7;
+$warm-fade: #EFEFEF;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.button-component {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+
+    .save-btn {
+        color: $sky-4;
+        letter-spacing: 1px;
+        border-color: $sky-4;
+
+        &:hover {
+            color: $light;
+            background: $sky-4;
+            border-color: $sky-4;
+
+            &:active {
+                color: $light;
+                background: $sky-4;
+                border-color: $sky-4;
+            }
+        }
+    }
+
+    .cancel-btn {
+        color: $teal-1;
+        letter-spacing: 1px;
+        border-color: $teal-1;
+
+        &:hover {
+            color: $light;
+            background: $teal-1;
+            border-color: $teal-1;
+
+            &:active {
+                color: $light;
+                background: $teal-1;
+                border-color: $teal-1;
+            }
+        }
+    }
+
+    .update-btn {
+        color: $warm-yellow;
+        letter-spacing: 1px;
+        border-color: $warm-yellow;
+
+        &:hover {
+            color: $light;
+            background: $warm-yellow;
+            border-color: $warm-yellow;
+
+            &:active {
+                color: $light;
+                background: $warm-yellow;
+                border-color: $warm-yellow;
+            }
+        }
+    }
+
+    .drop-btn {
+        color: $warm-red;
+        letter-spacing: 1px;
+        border-color: $warm-red;
+
+        &:hover {
+            color: $light;
+            background: $warm-red;
+            border-color: $warm-red;
+
+            &:active {
+                color: $light;
+                background: $warm-red;
+                border-color: $warm-red;
+            }
+        }
+    }
+}

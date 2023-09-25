@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.button-component {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.button-component .save-btn {
+  color: #146C94;
+  letter-spacing: 1px;
+  border-color: #146C94;
+}
+.button-component .save-btn:hover {
+  color: #F8F6F4;
+  background: #146C94;
+  border-color: #146C94;
+}
+.button-component .save-btn:hover:active {
+  color: #F8F6F4;
+  background: #146C94;
+  border-color: #146C94;
+}
+.button-component .cancel-btn {
+  color: #8EC3B0;
+  letter-spacing: 1px;
+  border-color: #8EC3B0;
+}
+.button-component .cancel-btn:hover {
+  color: #F8F6F4;
+  background: #8EC3B0;
+  border-color: #8EC3B0;
+}
+.button-component .cancel-btn:hover:active {
+  color: #F8F6F4;
+  background: #8EC3B0;
+  border-color: #8EC3B0;
+}
+.button-component .update-btn {
+  color: #FFDE00;
+  letter-spacing: 1px;
+  border-color: #FFDE00;
+}
+.button-component .update-btn:hover {
+  color: #F8F6F4;
+  background: #FFDE00;
+  border-color: #FFDE00;
+}
+.button-component .update-btn:hover:active {
+  color: #F8F6F4;
+  background: #FFDE00;
+  border-color: #FFDE00;
+}
+.button-component .drop-btn {
+  color: #D2001A;
+  letter-spacing: 1px;
+  border-color: #D2001A;
+}
+.button-component .drop-btn:hover {
+  color: #F8F6F4;
+  background: #D2001A;
+  border-color: #D2001A;
+}
+.button-component .drop-btn:hover:active {
+  color: #F8F6F4;
+  background: #D2001A;
+  border-color: #D2001A;
+}/*# sourceMappingURL=button.css.map */

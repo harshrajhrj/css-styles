@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+$light: #F8F6F4;
+$sky-1: #F6F1F1;
+$sky-2: #AFD3E2;
+$sky-3: #19A7CE;
+$sky-4: #146C94;
+
+$teal-1: #8EC3B0;
+$teal-2: #9ED5C5;
+$teal-3: #BCEAD5;
+$teal-4: #DEF5E5;
+
+$warm-red: #D2001A;
+$warm-yellow: #FFDE00;
+$warm-light-: #FFFAE7;
+$warm-fade: #EFEFEF;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.side-panel {
+    .offcanvas {
+        background: $sky-1;
+
+        .offcanvas-header {
+            padding: 8px 12px 8px 12px;
+
+            .wcl-mark-icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .wcl-mark {
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+
+                        span {
+                            font-size: 30px;
+                            font-weight: 600;
+                            font-family: 'Oswald', sans-serif;
+                            letter-spacing: 1.2px;
+                            color: var(--bs-primary);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.user-panel {
+    .offcanvas {
+        background: $sky-1;
+        width: 300px;
+
+        .offcanvas-header {
+            padding: 8px 12px 8px 12px;
+
+            .wcl-mark-icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .wcl-mark {
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+
+                        span {
+                            font-size: 30px;
+                            font-weight: 600;
+                            font-family: 'Oswald', sans-serif;
+                            letter-spacing: 1.2px;
+                            color: var(--bs-primary);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navigation {
+    padding: 8px 12px 8px 12px;
+    background: $teal-3;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px -3px;
+    width: 100%;
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            .offcanvas-button {
+                button {
+                    font-size: 20px;
+                    color: $sky-4;
+                    border-radius: 50%;
+
+                    &:hover {
+                        border-color: $teal-1;
+                        background-color: $teal-1;
+                        color: $light;
+                    }
+                }
+            }
+
+            .wcl-mark-icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .wcl-mark {
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+
+                        span {
+                            font-size: 30px;
+                            font-weight: 600;
+                            font-family: 'Oswald', sans-serif;
+                            letter-spacing: 1.2px;
+                            color: var(--bs-primary);
+                        }
+                    }
+                }
+            }
+        }
+
+        .right-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+
+            .socials {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+
+                a {
+                    color: $sky-4;
+
+                    &:hover {
+                        color: $sky-3;
+                    }
+                }
+            }
+
+            .notification {
+                a {
+                    color: $sky-4;
+
+                    &:hover {
+                        color: $sky-3;
+                    }
+                }
+            }
+
+            .user {
+                /* https://getcssscan.com/css-buttons-examples */
+                button {
+                    color: $sky-4;
+                    font-weight: 800;
+                    letter-spacing: 1.2px;
+
+                    padding: 0.375rem;
+
+                    &:hover {
+                        border-color: $sky-3;
+                        background-color: $sky-3;
+                        box-shadow: $sky-3 0 10px 20px -10px;
+                        color: $light;
+                    }
+                }
+            }
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: #{$sky-3};
+    --bs-tooltip-color: #{$light};
+}

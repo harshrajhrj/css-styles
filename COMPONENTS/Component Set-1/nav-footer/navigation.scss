@@ -1,0 +1,187 @@
+@use "./variables" as v;
+
+.side-panel {
+    z-index: 9999;
+    .offcanvas {
+        background: v.$sky-1;
+
+        .offcanvas-header {
+            padding: 8px 12px 8px 12px;
+
+            .wcl-mark-icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .wcl-mark {
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+
+                        span {
+                            font-size: 30px;
+                            font-weight: 600;
+                            font-family: 'Oswald', sans-serif;
+                            letter-spacing: 1.2px;
+                            color: var(--bs-primary);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.user-panel {
+    z-index: 9999;
+    .offcanvas {
+        background: v.$sky-1;
+        width: 300px;
+
+        .offcanvas-header {
+            padding: 8px 12px 8px 12px;
+
+            .wcl-mark-icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .wcl-mark {
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+
+                        span {
+                            font-size: 30px;
+                            font-weight: 600;
+                            font-family: 'Oswald', sans-serif;
+                            letter-spacing: 1.2px;
+                            color: var(--bs-primary);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navigation {
+    padding: 8px 12px 8px 12px;
+    background: v.$teal-3;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px -3px;
+    width: 100%;
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            .offcanvas-button {
+                button {
+                    font-size: 20px;
+                    color: v.$sky-4;
+                    border-radius: 50%;
+
+                    &:hover {
+                        border-color: v.$teal-1;
+                        background-color: v.$teal-1;
+                        color: v.$light;
+                    }
+                }
+            }
+
+            .wcl-mark-icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .wcl-mark {
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+
+                        span {
+                            font-size: 30px;
+                            font-weight: 600;
+                            font-family: 'Oswald', sans-serif;
+                            letter-spacing: 1.2px;
+                            color: var(--bs-primary);
+                        }
+                    }
+                }
+            }
+        }
+
+        .right-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+
+            .socials {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+
+                a {
+                    color: v.$sky-4;
+
+                    &:hover {
+                        color: v.$sky-3;
+                    }
+                }
+            }
+
+            .notification {
+                a {
+                    color: v.$sky-4;
+
+                    &:hover {
+                        color: v.$sky-3;
+                    }
+                }
+            }
+
+            .user {
+
+                /* https://getcssscan.com/css-buttons-examples */
+                button {
+                    color: v.$sky-4;
+                    font-weight: 800;
+                    letter-spacing: 1.2px;
+
+                    padding: 0.375rem;
+
+                    &:hover {
+                        border-color: v.$sky-3;
+                        background-color: v.$sky-3;
+                        box-shadow: v.$sky-3 0 10px 20px -10px;
+                        color: v.$light;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navigation-tooltip {
+    --bs-tooltip-bg: #{v.$sky-3};
+    --bs-tooltip-color: #{v.$light};
+}

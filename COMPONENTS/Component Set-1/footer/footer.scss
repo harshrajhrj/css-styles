@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+$light: #F8F6F4;
+$sky-1: #F6F1F1;
+$sky-2: #AFD3E2;
+$sky-3: #19A7CE;
+$sky-4: #146C94;
+
+$teal-1: #8EC3B0;
+$teal-2: #9ED5C5;
+$teal-3: #BCEAD5;
+$teal-4: #DEF5E5;
+
+$warm-red: #D2001A;
+$warm-yellow: #FFDE00;
+$warm-light-: #FFFAE7;
+$warm-fade: #EFEFEF;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+    font-size: 10px;
+    padding: 8px 15px 8px 15px;
+    width: 100%;
+
+    hr {
+        opacity: .2;
+    }
+
+    footer {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 10px;
+
+        padding: 4px;
+
+        .top-wrapper {
+            width: 100%;
+            line-height: 1.2rem;
+
+            .user-agreement {
+                display: flex;
+                align-items: baseline;
+                justify-content: space-evenly;
+                gap: 10px;
+
+                letter-spacing: .2px;
+
+                span {
+                    color: $sky-4;
+                    font-weight: 600;
+                }
+
+                a {
+                    font-weight: normal;
+                    color: $sky-3;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            @media (max-width: 464px) {
+                width: auto;
+
+                .user-agreement {
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                }
+            }
+        }
+
+        .bottom-wrapper {
+            .copyright {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+
+                a {
+                    opacity: .7;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+
+                span {
+                    font-size: 16px;
+                    font-family: 'Oswald', sans-serif;
+                    color: $sky-4;
+                }
+            }
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+.footer-tooltip {
+    --bs-tooltip-bg: #{$sky-4};
+    --bs-tooltip-color: #{$light};
+    --bs-tooltip-font-size: 10px;
+}

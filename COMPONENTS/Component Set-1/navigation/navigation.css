@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.side-panel .offcanvas {
+  background: #F6F1F1;
+}
+.side-panel .offcanvas .offcanvas-header {
+  padding: 8px 12px 8px 12px;
+}
+.side-panel .offcanvas .offcanvas-header .wcl-mark-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.side-panel .offcanvas .offcanvas-header .wcl-mark-icon .wcl-mark a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.side-panel .offcanvas .offcanvas-header .wcl-mark-icon .wcl-mark a span {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1.2px;
+  color: var(--bs-primary);
+}
+
+.user-panel .offcanvas {
+  background: #F6F1F1;
+  width: 300px;
+}
+.user-panel .offcanvas .offcanvas-header {
+  padding: 8px 12px 8px 12px;
+}
+.user-panel .offcanvas .offcanvas-header .wcl-mark-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user-panel .offcanvas .offcanvas-header .wcl-mark-icon .wcl-mark a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.user-panel .offcanvas .offcanvas-header .wcl-mark-icon .wcl-mark a span {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1.2px;
+  color: var(--bs-primary);
+}
+
+.navigation {
+  padding: 8px 12px 8px 12px;
+  background: #BCEAD5;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px -3px;
+  width: 100%;
+}
+.navigation nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation nav .left-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.navigation nav .left-bar .offcanvas-button button {
+  font-size: 20px;
+  color: #146C94;
+  border-radius: 50%;
+}
+.navigation nav .left-bar .offcanvas-button button:hover {
+  border-color: #8EC3B0;
+  background-color: #8EC3B0;
+  color: #F8F6F4;
+}
+.navigation nav .left-bar .wcl-mark-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navigation nav .left-bar .wcl-mark-icon .wcl-mark a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.navigation nav .left-bar .wcl-mark-icon .wcl-mark a span {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1.2px;
+  color: var(--bs-primary);
+}
+.navigation nav .right-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.navigation nav .right-bar .socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.navigation nav .right-bar .socials a {
+  color: #146C94;
+}
+.navigation nav .right-bar .socials a:hover {
+  color: #19A7CE;
+}
+.navigation nav .right-bar .notification a {
+  color: #146C94;
+}
+.navigation nav .right-bar .notification a:hover {
+  color: #19A7CE;
+}
+.navigation nav .right-bar .user {
+  /* https://getcssscan.com/css-buttons-examples */
+}
+.navigation nav .right-bar .user button {
+  color: #146C94;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  padding: 0.375rem;
+}
+.navigation nav .right-bar .user button:hover {
+  border-color: #19A7CE;
+  background-color: #19A7CE;
+  box-shadow: #19A7CE 0 10px 20px -10px;
+  color: #F8F6F4;
+}
+
+a {
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: #19A7CE;
+  --bs-tooltip-color: #F8F6F4;
+}/*# sourceMappingURL=navigation.css.map */
