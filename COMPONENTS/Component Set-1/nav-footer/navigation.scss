@@ -2,6 +2,7 @@
 
 .side-panel {
     z-index: 9999;
+
     .offcanvas {
         background: v.$sky-1;
 
@@ -36,6 +37,7 @@
 
 .user-panel {
     z-index: 9999;
+
     .offcanvas {
         background: v.$sky-1;
         width: 300px;
@@ -88,7 +90,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 2px;
 
             .offcanvas-button {
                 button {
@@ -132,31 +134,92 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 15px;
+            gap: 12px;
+
+            a {
+                color: v.$sky-4;
+
+                &:hover {
+                    color: v.$sky-3;
+                }
+            }
+
+            .highlights-dropdown {
+                display: none;
+                align-items: center;
+                justify-content: center;
+                color: v.$sky-4;
+            }
+
+            .highlights {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+
+                /* https://codepen.io/jstn/pen/mdoOZJ
+                   Animated CSS underline for <a> tag
+                */
+                a {
+                    font-size: 12px;
+                    letter-spacing: .2px;
+                    position: relative;
+                    padding: 0 0 5px 0;
+
+                    &:hover {
+                        color: v.$sky-4;
+                    }
+
+                    &:after {
+                        background: none repeat scroll 0 0 transparent;
+                        bottom: 0;
+                        content: "";
+                        display: block;
+                        height: 1.5px;
+                        left: 50%;
+                        position: absolute;
+                        background: v.$sky-4;
+                        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                        width: 0;
+                    }
+
+                    &:hover:after {
+                        width: 100%;
+                        left: 0;
+                    }
+                }
+            }
+
+            @media (max-width: 590px) {
+                .highlights {
+                    display: none;
+                }
+
+                .highlights-dropdown {
+                    display: flex;
+
+                    button {
+                        padding: 2px;
+                        color: v.$sky-4;
+                        border: none;
+                    }
+
+                    .highlights.show {
+                        display: flex;
+                        flex-flow: column;
+                        align-items: baseline;
+                        padding: 10px;
+                        border: 0px v.$teal-3;
+                        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+                    }
+                }
+            }
 
             .socials {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 gap: 8px;
-
-                a {
-                    color: v.$sky-4;
-
-                    &:hover {
-                        color: v.$sky-3;
-                    }
-                }
-            }
-
-            .notification {
-                a {
-                    color: v.$sky-4;
-
-                    &:hover {
-                        color: v.$sky-3;
-                    }
-                }
             }
 
             .user {
@@ -167,7 +230,7 @@
                     font-weight: 800;
                     letter-spacing: 1.2px;
 
-                    padding: 0.375rem;
+                    padding: 0.2rem;
 
                     &:hover {
                         border-color: v.$sky-3;
