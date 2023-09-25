@@ -1,1 +1,1 @@
-<video src="src/Skeleton.mp4" controls title="Title"></video>
+<video src="./src/Skeleton.mp4" controls title="Title"></video>
